@@ -38,6 +38,27 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
+        <section id="nosto_tagging" translate="label" type="text" sortOrder="103" showInDefault="0"
+                 showInWebsite="0" showInStore="0">
+            <label>Nosto Account Configuration</label>
+            <group id="settings" translate="label" type="text" sortOrder="0" showInDefault="1"
+                   showInWebsite="1" showInStore="1">
+                <label>Account settings</label>
+                <field id="account" translate="label comment" type="text" sortOrder="10"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Account</label>
+                </field>
+                <field id="tokens" translate="label comment" type="text" sortOrder="20"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Tokens</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="domain" translate="label comment" type="text" sortOrder="20"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Domain</label>
+                </field>
+            </group>
+        </section>
         <section id="nosto" translate="label" type="text" sortOrder="102" showInDefault="1"
                  showInWebsite="1" showInStore="1">
             <label>Nosto</label>

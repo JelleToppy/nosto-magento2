@@ -248,4 +248,20 @@
             <argument name="batchSize" xsi:type="number">500</argument>
         </arguments>
     </type>
+
+    <!-- Set sensitive information -->
+    <type name="Magento\Config\Model\Config\TypePool">
+        <arguments>
+            <argument name="sensitive" xsi:type="array">
+                <item name="nosto_tagging/settings/account" xsi:type="string">1</item>
+                <item name="nosto_tagging/settings/tokens" xsi:type="string">1</item>
+                <item name="nosto_tagging/settings/domain" xsi:type="string">1</item>
+            </argument>
+            <argument name="environment" xsi:type="array">
+                <item name="nosto_tagging/settings/account" xsi:type="string">1</item>
+                <item name="nosto_tagging/settings/tokens" xsi:type="string">1</item>
+                <item name="nosto_tagging/settings/domain" xsi:type="string">1</item>
+            </argument>
+        </arguments>
+    </type>
 </config>
